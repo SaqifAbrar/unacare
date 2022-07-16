@@ -1,0 +1,19 @@
+{
+  "name": "unacare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaqifAbrar/unacare.git"
+  },
+  "author": "Saqif Abrar, Amira Bouchema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaqifAbrar/unacare/issues"
+  },
+  "homepage": "https://github.com/SaqifAbrar/unacare#readme"
+}
