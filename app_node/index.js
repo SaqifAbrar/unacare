@@ -10,6 +10,7 @@ const apiRoutes = require("./src/routes/routes");
 app.use("/api", apiRoutes);
 
 const port = process.env.PORT || 6000;
+
 app.listen(port, () =>
 	console.log(`UnaCare server is listening on port ${port}`),
 );
