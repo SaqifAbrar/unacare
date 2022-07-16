@@ -1,0 +1,9 @@
+.layout-container {
+	width: 100vw;
+	display: grid;
+}
+
+.side-style {
+	grid-template-areas: "sidebar content";
+	grid-template-columns: 1.5fr 4.5fr;
+}

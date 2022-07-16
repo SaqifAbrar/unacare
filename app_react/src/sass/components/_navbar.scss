@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as *;
+
+.navbar-container {
+	width: auto;
+	height: 100vh;
+
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5vw 1vw;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+
+	color: $system-white;
+	background-color: $primary-color;
+	border-radius: 0px 40px 40px 0px;
+}
+
+.logo-container {
+	text-align: center;
+
+	h1,
+	p {
+		margin: 0px;
+	}
+}
+
+.pfp-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	span {
+		height: 15vw;
+		width: 15vw;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	h2,
+	h4 {
+		margin-top: 0.5vw;
+		margin-bottom: 0;
+	}
+}
+
+.navlinks-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	a {
+		padding-bottom: 1.5vw;
+	}
+}
+
+.address-container {
+}
