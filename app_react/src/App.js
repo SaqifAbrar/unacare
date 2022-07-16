@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./common/layout/layout";
 import Navbar from "./common/layout/navbar";
 import Content from "./common/layout/content";
-import Home from "./pages/home";
+import Prescriptions from "./pages/prescriptions";
 
 import "./sass/main.scss";
+import PatientView from "./pages/patientView";
 
 function App() {
 	return (
@@ -15,7 +16,9 @@ function App() {
 					<Navbar />
 					<Content>
 						<Routes>
-							<Route path="/" element={<Home />} />
+							<Route path="/prescriptions" element={<Prescriptions />} />
+							<Route path="/patient_view" element={<PatientView />} />
+							<Route path="*" element={<Prescriptions />} />
 						</Routes>
 					</Content>
 				</Layout>
