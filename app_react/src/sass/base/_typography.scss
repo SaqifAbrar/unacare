@@ -1,6 +1,7 @@
+@use "../abstracts/variables" as *;
+
 * {
 	font-family: "Poppins";
-	color: $system-black;
 }
 
 h1 {
@@ -12,5 +13,4 @@ p,
 a,
 button {
 	font-size: 1.5vw;
-	font-weight: 600;
 }

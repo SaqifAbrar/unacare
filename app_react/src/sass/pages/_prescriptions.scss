@@ -3,10 +3,19 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 2.5vw 5vw;
+	gap: 2vw;
 }
 
-.pending-section {
+.pending-section,
+.fulfilled-section {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5vw;
+
+	a {
+		padding-bottom: 1vw;
+	}
 }
 
 .fulfilled-section {

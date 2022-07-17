@@ -1,8 +1,11 @@
+@use "../abstracts/variables" as *;
+
 .patient-view-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 2.5vw 5vw;
+	gap: 2vw;
 }
 
 .entry-history-section {
@@ -15,16 +18,30 @@
 
 .patient-info-section {
 	width: 100%;
+
 	padding: 2.5vw;
 	display: flex;
 	flex-direction: row;
-	gap: 5vw;
+	gap: 2vw;
+	border-radius: 25px;
+	background-color: $light-sky;
 }
 
 .patient-details {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+}
+
+.prescription-details {
+	width: 100%;
+	padding: 2vw;
+	display: flex;
+	flex-direction: column;
+	gap: 1vw;
+	background-color: $light-yellow;
+	border-radius: 25px;
 }
 
 .name-container,

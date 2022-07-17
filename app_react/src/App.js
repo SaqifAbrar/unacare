@@ -17,7 +17,9 @@ function App() {
 					<Content>
 						<Routes>
 							<Route path="/prescriptions" element={<Prescriptions />} />
-							<Route path="/patient_view" element={<PatientView />} />
+							<Route path="/patientView">
+								<Route path=":patientId" element={<PatientView />} />
+							</Route>
 							<Route path="*" element={<Prescriptions />} />
 						</Routes>
 					</Content>

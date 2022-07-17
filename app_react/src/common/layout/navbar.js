@@ -11,13 +11,12 @@ const Navbar = () => {
 	return (
 		<div className="navbar-container">
 			<div className="logo-container">
-				<h1>Ontario Health</h1>
-				<p>powered by UnaCare</p>
+				<h1>UnaCare</h1>
 			</div>
 			<div className="pfp-container">
 				<span></span>
 				<h2>Jane Doe</h2>
-				<h4>Pharmacist</h4>
+				<h3>Pharmacist</h3>
 			</div>
 			<div className="navlinks-container">
 				{navlinks.map((link) => (

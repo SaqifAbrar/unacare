@@ -2,7 +2,11 @@ const router = require("express").Router();
 const db = require("../../dbConfig");
 
 router.get("/", (req, res) => {
-	const query = `SELECT * FROM prescriptions`;
+	const paramIsEmpty = JSON.stringify(req.query) === "{}";
+
+	const query = `SELECT ${
+		paramIsEmpty ? "*" : req.query.data
+	} FROM prescriptions`;
 
 	db.all(query, [], (err, rows) => {
 		if (err) return res.send(err.message);
