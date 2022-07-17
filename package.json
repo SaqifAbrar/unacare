@@ -1,26 +1,25 @@
 {
 	"name": "unacare",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Initialized Project UnaCare",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"server": "nodemon start"
+		"server": "cd ./app_node && nodemon start",
+		"client": "cd ./app_react && npm run start",
+		"concurrently": "concurrently \"npm run server\" \"npm run client\""
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/SaqifAbrar/unacare.git"
 	},
-	"author": "Saqif Abrar, Amira Bouchema",
+	"author": "",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/SaqifAbrar/unacare/issues"
 	},
 	"homepage": "https://github.com/SaqifAbrar/unacare#readme",
 	"dependencies": {
-		"concurrently": "^7.2.2",
-		"dotenv": "^16.0.1",
-		"express": "^4.18.1",
-		"sqlite3": "^5.0.9"
+		"concurrently": "^7.2.2"
 	}
 }
