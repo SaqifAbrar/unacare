@@ -1,12 +1,25 @@
 const router = require("express").Router();
+const db = require("../../dbConfig");
 
 router.get("/", (req, res) => {
-	res.send({ message: "recieving list of prescriptions" });
+	const query = `SELECT * FROM prescriptions`;
+
+	db.all(query, [], (err, rows) => {
+		if (err) return res.send(err.message);
+		//console.log(rows);
+		res.send(rows);
+	});
 });
 
 router.get("/:id", (req, res) => {
-	const locationId = req.params.id;
-	res.send({ message: "recieving prescriptions of id: " + locationId });
+	//console.log(req.params.id);
+	const query = `SELECT * FROM prescriptions WHERE id = ${req.params.id}`;
+
+	db.all(query, [], (err, rows) => {
+		if (err) return res.send(err.message);
+		//console.log(rows);
+		res.send(rows);
+	});
 });
 
 module.exports = router;
